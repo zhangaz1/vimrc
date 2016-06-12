@@ -203,8 +203,13 @@ autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 "--------------------------------
 
 "加载Vundle
-set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
-call vundle#begin('$USERPROFILE/vimfiles/bundle/')
+if has('win32')
+    set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
+    call vundle#begin('$USERPROFILE/vimfiles/bundle/')
+else
+    set rtp+=$HOME/vimfiles/.vim/Vundle.vim/
+    call vundle#begin('$HOME/.vim/bundle/')
+endif
 
 "插件需要
 filetype off
