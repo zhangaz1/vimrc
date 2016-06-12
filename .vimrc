@@ -213,3 +213,5 @@ if !exists('g:bundle_groups')
     let g:bundle_group=['javascript', 'html', 'css', 'markdown', 'xml']
 endif
 
+Bundle 'csExplorer'
+
