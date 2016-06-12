@@ -2,6 +2,13 @@
 "基本设置
 "--------------------------------
 
+"设置文件编码
+set encoding=utf-8
+set fileencoding=utf-8
+
+"console乱码
+language messages zh_CN.utf-8
+
 "不兼容vi
 set nocompatible
 
